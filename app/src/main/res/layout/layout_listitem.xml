@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:clipToPadding="false"
+    android:background="#fff"
+    android:id="@+id/hello"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/day_view"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_date"
+            >
+
+                <TextView
+                    android:id="@+id/daytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="11sp"
+                    android:layout_marginTop="10dp"
+                    android:autoSizeMinTextSize="11sp"
+                    android:autoSizeMaxTextSize="15sp"
+                    android:autoSizeTextType="uniform"
+                    android:text="SUN"
+                    android:textColor="#C4C9DF"/>
+
+                <TextView
+
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="27dp"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeMaxTextSize="25sp"
+                    android:autoSizeTextType="uniform"
+                    android:text="12"
+                    android:textColor="#C4C9DF"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

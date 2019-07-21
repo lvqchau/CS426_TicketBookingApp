@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="390dp"
+        android:background="#fff">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-17dp"
+            app:cardCornerRadius="17dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="390dp"
+                android:layout_height="260dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="17dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover"
+                android:tint="#6F000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_left_arrow"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/info_card"
+            android:layout_width="350dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="80dp"
+            android:background="#000"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/nameOfFilm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoSizeMaxTextSize="27sp"
+                    android:autoSizeMinTextSize="19sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:gravity="start"
+                    android:text="Ant Man and the Wasp"
+                    android:textAlignment="center"
+                    android:textColor="#212224"
+                    android:textSize="19sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/stars"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeTextType="uniform"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="4.9"
+                        android:textColor="#868E96"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/watch_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeTextType="uniform"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="111mins"
+                        android:textColor="#868E96"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/reso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeTextType="uniform"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="IMAX 3D"
+                        android:textColor="#868E96"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="700dp"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="22dp"
+                    android:background="#C4C9DF" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoSizeMaxTextSize="17sp"
+                        android:autoSizeMinTextSize="14sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:paddingTop="3dp"
+                        android:text="Sypnosis"
+                        android:textColor="#404040"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/genre1"
+                        android:layout_width="70dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/border"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:stateListAnimator="@null"
+                        android:text="Aventure"
+                        android:textAllCaps="false"
+                        android:textColor="#868E96"
+                        android:textSize="10sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/genre2"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:autoSizeMaxTextSize="10sp"
+                        android:autoSizeMinTextSize="9sp"
+                        android:background="@drawable/border"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:lineHeight="5dp"
+                        android:stateListAnimator="@null"
+                        android:text="Adventure"
+                        android:textAllCaps="false"
+                        android:textColor="#868E96"
+                        android:textSize="9sp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/genre3"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/border"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:stateListAnimator="@null"
+                        android:text="Action"
+                        android:textAllCaps="false"
+                        android:textColor="#868E96"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="10dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="vertical">
+
+                    <TextView
+                        android:id="@+id/sypnosis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="10dp"
+                        android:text="Scott Lang is grappling with the consequences of his choices as both a superhero and a father. Approached by Hope van Dyne and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym,  and Dr. Hank Pym, Lang must once again don …"
+                        android:textColor="#868E96"
+                        android:textSize="11sp"></TextView>
+
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="5dp"
+                android:clipToPadding="false"
+                android:elevation="7dp"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:paddingEnd="10dp"
+
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCinema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="308dp"
+            android:background="@drawable/round_button"
+            android:drawableTop="@drawable/ic_right_arrow"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+</LinearLayout>
